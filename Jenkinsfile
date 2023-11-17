@@ -16,6 +16,7 @@ pipeline {
                 sh '''
                 echo "doing build stuff.."
                 '''
+                echo "Building image for ${env.BRANCH_NAME}"
             }
         }
         stage('Test') {
